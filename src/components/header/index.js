@@ -1,15 +1,13 @@
-import React from 'react'
-import { css, jsx } from '@emotion/core'
+import React from "react";
+import FullScreen from "../full-screen";
 
 const Header = () => (
-    <header
-        css={css`
-          height: 100vh;
-        `}
-    >
-        <h1>Starsurge Labs</h1>
-        <p>O início de seu novo projeto, começa aqui!</p>
-    </header>
-)
+  <FullScreen.header>
+    <FullScreen.content>
+      <h1>Starsurge Labs</h1>
+      <p>O início de seu novo projeto, começa aqui!</p>
+    </FullScreen.content>
+  </FullScreen.header>
+);
 
-export default Header
+export default Header;
