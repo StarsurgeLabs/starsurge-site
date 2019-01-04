@@ -1,21 +1,18 @@
-import React, { Fragment } from "react";
-import { Global, css } from "@emotion/core";
-import Header from "../components/header";
-import FullScreen from "../components/full-screen";
-
-export default () => (
-  <Fragment>
-    <Global
-      styles={css`
-        * {
-          margin: 0;
-          padding: 0;
-        }
-      `}
-    />
-    <Header />
-    <FullScreen>
-      <FullScreen.content>
+"use strict";
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var react_1 = require("react");
+var core_1 = require("@emotion/core");
+var header_1 = require("../components/header");
+var full_screen_1 = require("../components/full-screen");
+var IndexPage = function () { return (<react_1.Fragment>
+    <core_1.Global styles={core_1.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n        * {\n          margin: 0;\n          padding: 0;\n        }\n      "], ["\n        * {\n          margin: 0;\n          padding: 0;\n        }\n      "])))}/>
+    <header_1.default />
+    <full_screen_1.default>
+      <full_screen_1.default.content>
         <h2>Quem somos?</h2>
         <p>
           Starsurge nasceu com o objetivo de ajudar pessoas, construindo
@@ -25,10 +22,10 @@ export default () => (
           velocidade de desenvolvimento com o tempo de vida duradouro da sua
           aplicação
         </p>
-      </FullScreen.content>
-    </FullScreen>
-    <FullScreen>
-      <FullScreen.content>
+      </full_screen_1.default.content>
+    </full_screen_1.default>
+    <full_screen_1.default>
+      <full_screen_1.default.content>
         <h2>O que fazemos?</h2>
         <ul>
           <li>
@@ -64,14 +61,11 @@ export default () => (
             </p>
           </li>
         </ul>
-      </FullScreen.content>
-    </FullScreen>
-    <footer
-      css={css`
-        text-align: center;
-      `}
-    >
+      </full_screen_1.default.content>
+    </full_screen_1.default>
+    <footer css={core_1.css(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n        text-align: center;\n      "], ["\n        text-align: center;\n      "])))}>
       <small>Made with love in Floripa-SC</small>
     </footer>
-  </Fragment>
-);
+  </react_1.Fragment>); };
+exports.default = IndexPage;
+var templateObject_1, templateObject_2;

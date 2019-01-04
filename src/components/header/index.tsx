@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import FullScreen from "../full-screen";
 
 const Header = () => (

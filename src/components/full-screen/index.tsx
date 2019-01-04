@@ -1,11 +1,11 @@
-import React from "react";
 import styled from "@emotion/styled";
 
-const FullScreen = styled.div`
-  height: 100vh;
-  position: relative;
-  width: 100%;
-`;
+type FullScreenType = {
+    header?: any,
+    content?: any
+}
+
+const FullScreen: FullScreenType = {}
 
 FullScreen.header = styled.header`
   height: 100vh;
