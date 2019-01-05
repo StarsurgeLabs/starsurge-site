@@ -1,11 +1,10 @@
 import styled from "@emotion/styled";
 
-type FullScreenType = {
-    header?: any,
-    content?: any
-}
-
-const FullScreen: FullScreenType = {}
+const FullScreen = styled.div`
+  height: 100vh;
+  position: relative;
+  width: 100%;
+`;
 
 FullScreen.header = styled.header`
   height: 100vh;
@@ -20,4 +19,4 @@ FullScreen.content = styled.section`
   transform: translate3d(-50%, -50%, 0);
 `;
 
-export default FullScreen
+export default FullScreen;
