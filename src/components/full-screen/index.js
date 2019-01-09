@@ -23,9 +23,9 @@ FullScreen.header = styled.header`
 FullScreen.content = styled.section`
   left: 50%;
   position: absolute;
+  text-align: center;
   top: 50%;
   transform: translate3d(-50%, -50%, 0);
-  width: 90%;
 `;
 
 export default FullScreen;
