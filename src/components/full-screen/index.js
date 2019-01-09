@@ -1,13 +1,21 @@
 import styled from "@emotion/styled";
 
 const FullScreen = styled.div`
-  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-height: 100vh;
   position: relative;
   width: 100%;
 `;
 
+FullScreen.section = styled.section`
+  width: 90%;
+`;
+
 FullScreen.header = styled.header`
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   width: 100%;
 `;
@@ -15,6 +23,7 @@ FullScreen.header = styled.header`
 FullScreen.content = styled.section`
   left: 50%;
   position: absolute;
+  text-align: center;
   top: 50%;
   transform: translate3d(-50%, -50%, 0);
 `;
