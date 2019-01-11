@@ -34,6 +34,15 @@ const Overlay = styled.div`
   position: absolute;
   right: 0;
   top: 0;
+  &:after {
+    border: 20px solid #a6ffcb;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 `;
 
 const Title = styled.h1`
