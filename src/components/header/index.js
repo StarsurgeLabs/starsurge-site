@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import FullScreen from "../full-screen";
 
-import video from "../../assets/videos/bg.webm";
+import video from "../../assets/videos/bg.mp4";
 
 const Wrapper = styled(FullScreen.header)`
   background-color: #000060;
@@ -55,7 +55,7 @@ const Start = styled.button`
 const Header = () => (
   <Wrapper>
     <Video autoPlay muted loop id="video">
-      <source src={video} type="video/webm" />
+      <source src={video} type="video/mp4" />
     </Video>
     <Overlay />
     <FullScreen.content>
