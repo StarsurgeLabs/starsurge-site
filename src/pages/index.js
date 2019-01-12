@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Global, css } from "@emotion/core";
 import Header from "../components/header";
 import FullScreen from "../components/full-screen";
+import Footer from "../components/footer";
 
 export default () => (
   <Fragment>
@@ -83,14 +84,6 @@ export default () => (
         </FullScreen.section>
       </FullScreen>
     </main>
-    <footer
-      css={css`
-        clear: both;
-        text-align: center;
-        width: 100%;
-      `}
-    >
-      <small>Made with love in Floripa-SC</small>
-    </footer>
+    <Footer />
   </Fragment>
 );

@@ -8,6 +8,18 @@ const FullScreen = styled.div`
   min-height: 100vh;
   position: relative;
   width: 100%;
+  &:after {
+    border: 5px solid #a6ffcb;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    @media (min-width: 768px) {
+      border: 20px solid #a6ffcb;
+    }
+  }
 `;
 
 FullScreen.section = styled.section`
