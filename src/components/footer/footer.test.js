@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./template";
+import Footer from "./index";
 
 describe("Footer component", () => {
   it("should renderer correctly", () => {
